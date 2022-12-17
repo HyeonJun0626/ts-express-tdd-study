@@ -1,0 +1,13 @@
+{
+  "include": ["src/**/*"], // src 폴더 아래 전체 컴파일
+  "compilerOptions": {
+    "strict": true,
+    "rootDir": "./src",
+    "outDir": "build", // ts -> js 컴파일 파일 생성 위치
+    "target": "ES6", // ts 파일을 어떤 버전의 js로 바꿀지
+//    "lib": ["ES6"],  /* 사용할 라이브러리 ? 설정 안하면 target 버전으로 사용됨, DOM을 추가하면 window. , localStorage 등 타입정보 추가되는 식 */
+    //    "allowJs": true,  /* js파일을 같이 사용할 수 있음, 기존 js 프로젝트를 ts로 리펙토링 할때 적용할 듯 */
+    "esModuleInterop": true,  /* 대충 commonJS, es6 모듈 시스템 같이 사용 잘되게 해주는 설정인듯 ?*/
+    "module": "CommonJS", /* 사용할 모듈 시스템 */
+  }
+}
